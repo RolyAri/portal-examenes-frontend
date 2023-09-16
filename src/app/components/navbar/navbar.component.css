@@ -1,0 +1,12 @@
+.example-spacer{
+    margin-right: 60em;
+}
+.box{
+    justify-content: space-between;
+}
+.spacer{
+    margin-right: 5em;
+}
+.box div a:hover{
+    color: black;
+}
