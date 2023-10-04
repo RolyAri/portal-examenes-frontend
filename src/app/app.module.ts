@@ -13,6 +13,9 @@ import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatSelectModule} from '@angular/material/select';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SignupComponent } from './pages/signup/signup.component';
@@ -26,6 +29,11 @@ import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboa
 import { ProfileComponent } from './pages/profile/profile.component';
 import { SidebarComponent } from './pages/admin/sidebar/sidebar.component';
 import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
+import { ViewCategoriasComponent } from './pages/admin/view-categorias/view-categorias.component';
+import { AddCategoriasComponent } from './pages/admin/add-categorias/add-categorias.component';
+import { ViewExamenesComponent } from './pages/admin/view-examenes/view-examenes.component';
+import { AddExamenComponent } from './pages/admin/add-examen/add-examen.component';
+import { ActualizarExamenComponent } from './pages/admin/actualizar-examen/actualizar-examen.component';
 
 
 @NgModule({
@@ -39,7 +47,12 @@ import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
     UserDashboardComponent,
     ProfileComponent,
     SidebarComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ViewCategoriasComponent,
+    AddCategoriasComponent,
+    ViewExamenesComponent,
+    AddExamenComponent,
+    ActualizarExamenComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +67,10 @@ import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatDividerModule,
+    MatSlideToggleModule,
+    MatSelectModule
   ],
   providers: [AuthInterceptorProviders],
   bootstrap: [AppComponent]

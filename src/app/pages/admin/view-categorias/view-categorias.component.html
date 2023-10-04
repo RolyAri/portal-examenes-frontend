@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-list>
+        <div mat-subheader>
+            Todas las categorias
+        </div>
+        <div *ngFor="let c of categorias">
+            <mat-list-item>
+                <mat-icon matListItemIcon>category</mat-icon>
+                <div mat-line>{{ c.titulo }}</div>
+                <div mat-line>{{ c.descripcion }}</div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+        </div>
+    </mat-list>
+    <div class="container text-center mt20 mb10">
+        <button routerLink="/admin/add-categoria" mat-raised-button color="primary">Agregar Categoria</button>
+    </div>
+</mat-card>

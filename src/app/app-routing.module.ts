@@ -9,6 +9,11 @@ import { NormalGuard } from './services/normal.guard';
 import { AdminGuard } from './services/admin.guard';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
+import { ViewCategoriasComponent } from './pages/admin/view-categorias/view-categorias.component';
+import { AddCategoriasComponent } from './pages/admin/add-categorias/add-categorias.component';
+import { ViewExamenesComponent } from './pages/admin/view-examenes/view-examenes.component';
+import { AddExamenComponent } from './pages/admin/add-examen/add-examen.component';
+import { ActualizarExamenComponent } from './pages/admin/actualizar-examen/actualizar-examen.component';
 
 const routes: Routes = [
   {
@@ -38,6 +43,26 @@ const routes: Routes = [
       {
         path: '',
         component: WelcomeComponent
+      },
+      {
+        path: 'categorias',
+        component: ViewCategoriasComponent
+      },
+      {
+        path: 'add-categoria',
+        component: AddCategoriasComponent
+      },
+      {
+        path: 'examenes',
+        component: ViewExamenesComponent
+      },
+      {
+        path: 'add-examen',
+        component: AddExamenComponent
+      },
+      {
+        path: 'examen/:examenId',
+        component: ActualizarExamenComponent
       }
     ]
   },

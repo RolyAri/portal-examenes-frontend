@@ -2,25 +2,25 @@
     <mat-action-list>   
         <div mat-subheader>Menu</div>
         <button routerLink="/admin" mat-list-item>
-            <mat-icon mat-list-icon>home</mat-icon> Inicio
+            <div class="d-flex align-items-center"><mat-icon mat-list-icon>home</mat-icon> Inicio</div>
         </button>
         <button mat-list-item routerLink="/admin/profile">
-            <mat-icon mat-list-icon>account_circle</mat-icon> Perfil
+            <div class="d-flex align-items-center"><mat-icon mat-list-icon>account_circle</mat-icon> Perfil</div>
+        </button>
+        <button mat-list-item routerLink="/admin/categorias">
+            <div class="d-flex align-items-center"><mat-icon mat-list-icon>list</mat-icon> Categorías</div>
+        </button>
+        <button mat-list-item routerLink="/admin/add-categoria">
+            <div class="d-flex align-items-center"><mat-icon mat-list-icon>add_circle_outline</mat-icon> Agregar categoría</div>
+        </button>
+        <button mat-list-item routerLink="/admin/examenes">
+            <div class="d-flex align-items-center"><mat-icon mat-list-icon>quiz</mat-icon> Cuestionarios</div>
+        </button>
+        <button mat-list-item routerLink="/admin/add-examen">
+            <div class="d-flex align-items-center"><mat-icon mat-list-icon>list</mat-icon> Agregar Cuestionario</div>
         </button>
         <button mat-list-item routerLink="/admin/profile">
-            <mat-icon mat-list-icon>list</mat-icon> Categorías
-        </button>
-        <button mat-list-item routerLink="/admin/profile">
-            <mat-icon mat-list-icon>add_circle_outline</mat-icon> Agregar categoría
-        </button>
-        <button mat-list-item routerLink="/admin/profile">
-            <mat-icon mat-list-icon>quiz</mat-icon> Cuestionarios
-        </button>
-        <button mat-list-item routerLink="/admin/profile">
-            <mat-icon mat-list-icon>list</mat-icon> Agregar Cuestionario
-        </button>
-        <button mat-list-item routerLink="/admin/profile">
-            <mat-icon mat-list-icon>logout</mat-icon> Salir
+            <div class="d-flex align-items-center"><mat-icon mat-list-icon>logout</mat-icon> Salir</div>
         </button>
     </mat-action-list>
 </mat-card>
