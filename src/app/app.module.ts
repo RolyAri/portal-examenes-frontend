@@ -16,6 +16,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSelectModule} from '@angular/material/select';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SignupComponent } from './pages/signup/signup.component';
@@ -34,6 +35,14 @@ import { AddCategoriasComponent } from './pages/admin/add-categorias/add-categor
 import { ViewExamenesComponent } from './pages/admin/view-examenes/view-examenes.component';
 import { AddExamenComponent } from './pages/admin/add-examen/add-examen.component';
 import { ActualizarExamenComponent } from './pages/admin/actualizar-examen/actualizar-examen.component';
+import { ViewExamenPreguntasComponent } from './pages/admin/view-examen-preguntas/view-examen-preguntas.component';
+import { AddPreguntaComponent } from './pages/admin/add-pregunta/add-pregunta.component';
+import { ActualizarPreguntaComponent } from './pages/admin/actualizar-pregunta/actualizar-pregunta.component';
+import { SidebarUserComponent } from './pages/user/sidebar-user/sidebar-user.component';
+import { LoadExamenComponent } from './pages/user/load-examen/load-examen.component';
+import { InstruccionesComponent } from './pages/user/instrucciones/instrucciones.component';
+import { StartComponent } from './pages/user/start/start.component';
+import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
 
 
 @NgModule({
@@ -52,7 +61,14 @@ import { ActualizarExamenComponent } from './pages/admin/actualizar-examen/actua
     AddCategoriasComponent,
     ViewExamenesComponent,
     AddExamenComponent,
-    ActualizarExamenComponent
+    ActualizarExamenComponent,
+    ViewExamenPreguntasComponent,
+    AddPreguntaComponent,
+    ActualizarPreguntaComponent,
+    SidebarUserComponent,
+    LoadExamenComponent,
+    InstruccionesComponent,
+    StartComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +86,12 @@ import { ActualizarExamenComponent } from './pages/admin/actualizar-examen/actua
     MatListModule,
     MatDividerModule,
     MatSlideToggleModule,
-    MatSelectModule
+    MatSelectModule,
+    MatProgressSpinnerModule,
+    NgxUiLoaderModule,
+    NgxUiLoaderHttpModule.forRoot({
+      showForeground:true
+    })
   ],
   providers: [AuthInterceptorProviders],
   bootstrap: [AppComponent]

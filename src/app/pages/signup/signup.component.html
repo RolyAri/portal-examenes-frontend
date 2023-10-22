@@ -2,11 +2,12 @@
     <div class="container">
         <div class="row" style="margin-top: 20px;">
             <div class="col-md-6 offset-md-3">
+                <mat-card>
                 <div class="container text-center">
                     <img src="../../../assets/agregar-usuario.png" width="100" height="100">
                 </div>
                 <h1 class="text-center">Registrate aquí</h1>
-                <form (ngSubmit)="formSubmit()">
+                <form class="ml20 mr20 mb20" (ngSubmit)="formSubmit()">
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>Nombre de usuario</mat-label>
                         <input required [(ngModel)] = "user.username" name="username" matInput placeholder="Digite su nombre de usuario" >
@@ -36,8 +37,8 @@
                         <button mat-raised-button color="primary">Registrar</button>
                         <button type="reset" style="margin-left: 20px;" mat-raised-button color="accent">Limpiar</button>
                     </div>
-
                 </form>
+            </mat-card>
                 <br><br><br>
             </div>
         </div>

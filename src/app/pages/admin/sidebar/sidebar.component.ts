@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
+  constructor(public login: LoginService) { }
 
+  public logout() {
+    this.login.logout();
+    window.location.reload();
+  }
 }
